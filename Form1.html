@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    h1{
+        background-color: Black;
+    }
+</style>
+
+<body background="C:\Users\Administrator\Downloads\Scene-20.jpg" text = "white">
+    <hr color="chocolate" height="100px">
+    <h1><center>
+        Registration form
+        <br>
+    </center>
+    </h1>
+    <hr color="chocolate" height = "100px">
+    <form action="">
+        <p>
+            <h3>Name: </h3>
+            <input type="text" name="first_name" id="fn" placeholder="First Name" required> <input type="text" name="last_name" id="ln" placeholder="Last Name" required>
+            <h3>Email: </h3><input type="email" name="email1" id="em1" placeholder="eg.abc@gmail.com" required>
+            <h3>Phone Number: </h3><input type="tel" name="phoneno" id="pno" placeholder="eg. 1234567890" maxlength="10">
+            <h3>Password: </h3><input type="password" name="password" id="pw" minlength="6" maxlength="25">
+            <h3>Date of Birth: </h3>
+            <input type="date" name="DOB" id="dob">
+            <h3>Age: </h3><input type="number" name="age" id="age" min="5" max="99" maxlength="3">
+            <h3>Gender</h3>
+            <input type="radio" name="g1" id="M">Male<input type="radio" name="g1" id="F">Female
+            <h3>Skills: </h3>
+            <input type="checkbox" name="HTML" id="html"> HTML5
+            <input type="checkbox" name="Css" id="css">CSS
+            <input type="checkbox" name="JS" id="js">JavaScript
+            <input type="checkbox" name="Python" id="python">Python
+            <h3>City: </h3>
+            <select name="City" id="city">
+                <option value="">Delhi</option>
+                <option value="">Noida</option>
+                <option value="">Greater Noida</option>
+                <option value="">Gurugram</option>
+                <option value="" disabled selected>choose a city:</option>
+            </select>
+            <br>
+            <h3>Upload Documents: </h3>
+            <input type="file" name="documents" id="docs">
+            <br>
+            <br>
+            <center><input type="submit" value="Submit"><input type="reset" value="Reset"></center>
+        </p>
+    </form>
+</body>
+</html>
