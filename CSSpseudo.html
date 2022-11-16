@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            color: aliceblue;
+            font-family: monotype corsiva;
+            font-weight: bold;
+            font-size: large;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        nav
+        {
+            background-color: black;
+            height: 20px;
+            width : 100%;
+            padding:40px;
+            text-align: center;
+            word-spacing: 50px;
+        }
+        a
+        {
+            color: aliceblue;
+            text-decoration: none;
+
+        }
+        a:hover
+        {
+            color: aqua;
+            text-decoration: underline;
+        }
+
+        #home{
+            text-align: center;
+            padding: 40px;
+            font-size: x-large;
+            background-color: rgba(53, 37, 37, 0.911);
+            height: 100px;
+            width: 100%;
+        }
+        
+        li:nth-child(odd){
+            color: bisque;
+        }
+
+        li:nth-child(even){
+            color: rgb(248, 239, 226);
+        }
+
+        #about{
+            align-content: center;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.747); 
+        }
+
+        #SignUp{
+            table-layout: auto;
+            align-self: center;
+            background-color: rgba(0, 0, 0, 0.747);
+            border: 3px inset grey;
+        }
+
+        p{
+            background-color: rgb(51, 47, 47);
+            text-shadow: 2px 1px grey;
+        }
+
+        p::first-letter{
+            font-size: 30px;
+        }
+
+        p:hover{
+            text-shadow: 2px 1px red;
+        }
+
+        #contact{
+            background-color: rgba(0, 0, 0, 0.747);
+        }
+
+        h1{
+            background-color: rgba(53, 37, 37, 0.671);
+        }
+        h1:hover{
+            text-shadow: 3px 2px red;
+        }
+    </style>
+</head>
+<body background="assets/images/3146494054a879448f2701e6954774a3.jpg">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#SignUp">Signup</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div id="home">
+        <h1>
+            Welcome to our website!!
+        </h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id = "about">
+        <p>We will help out in your difficult topics time to time. These topics may be:</p>
+        <ol type="1">
+            <li>Computer Science</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>C Language</li>
+            <li>Web development</li>
+        </ol>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id = "SignUp">
+        <p>So please Sign up</p>
+        <table width = "100%">
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" name="" id="" placeholder="first name"><input type="text" name="" id="" placeholder="last name"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth: </td>
+                <td><input type="date" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Gender: </td>
+                <td><input type="radio" name="g1" id="m">Male <input type="radio" name="g1" id="f">Female</td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="email" name="" id="" placeholder="eg. abc@xyz.com"></td>
+            </tr>
+            <tr>
+                <td>Contact no.:</td>
+                <td><input type="tel" name="" id="" maxlength="10" max="9999999999"></td>
+            </tr>
+            <tr>
+                <td>Feedback/Query</td>
+                <td><textarea name="feed" id="f" cols="30" rows="10"></textarea></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit" class="log_button1">
+    </div>
+
+    <div id="contact">
+        <p>CONTACT US</p>
+        <a href="">Instagram</a>
+        <a href="">Whatsapp</a>
+        <a href="">Facebook</a>
+    </div>
+
+</body>
+</html>
