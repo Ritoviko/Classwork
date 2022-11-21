@@ -1,0 +1,85 @@
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 80px;
+    padding: 3px;
+}
+body{
+    margin: 0px;
+}
+#img1{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+}
+#element1{
+    width: 10%;
+    background-color: antiquewhite;
+    text-align: center;
+    transition: 2s all;
+    
+}
+#element1:hover{
+    background-color: purple;
+    flex: 20%;
+}
+li{
+    display: inline;
+    margin-left: 60px;
+}
+ul{
+    list-style-type: none;
+}
+#element2{
+    width: 80%;
+    text-align: right;
+    padding: 30px;
+    flex: 80%;
+}
+a{
+    color: aliceblue;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s all;
+}
+a:hover{
+    color: red;
+    text-shadow: 2px 2px grey;
+}
+#head{
+    background-color: blueviolet;
+    height: 20px;
+    transition: 2s all;
+}
+
+#head:hover{
+    background-color: cornflowerblue;
+}
+#slider{
+    height: 600px;
+    width: 100%;
+    background-image: url(../images/cleaning-service-flat-vector-8360874.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: firstone;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes firstone{
+    from{
+        background-image: url(../images/cleaning-service-flat-vector-8360874.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    to{
+        background-image: url(../images/cleaning-service-sign-vector-8539835.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
