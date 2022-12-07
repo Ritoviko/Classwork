@@ -1,0 +1,21 @@
+#flex-container{
+    display: flex;
+    background-color: blue;
+    flex-flow: row-reverse wrap;
+}
+
+#flex-left{
+    flex: 50%;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 20px;
+    font-size: 80px;
+}
+
+#flex-right{
+    flex: 50%;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 20px;
+    font-size: 80px;
+}

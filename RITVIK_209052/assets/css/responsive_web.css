@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+}
+
+
+
+#container1{
+    display: flex;
+    background-color: coral;
+    height: 20px;
+}
+
+#left{
+    flex: 20%;
+    text-align: left;
+}
+
+#right{
+    flex: 80%;
+    text-align: right;
+}
+
+#right ol{
+    list-style-type: none;
+    margin-top: -1px;
+}
+
+#right ol li{
+    display: inline;
+}
+
+nav{
+    display: flex;
+    background-color: aqua;
+}
+
+#left_container{
+    flex: 20%;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+#right_container{
+    flex: 80%;
+    text-align: center;
+}
+
+#right_container ol{
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+#right_container ol li{
+    display: inline;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+#right_container ol li a{
+    font-size: 33px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown .dropdown_contents{
+    display: none;
+    position: absolute;
+    width: 160px;
+    left: 950px;
+}
+
+.dropdown:hover .dropdown_contents{
+    display: block;
+    flex-direction: column;
+}
+
+.dropdown_contents a{
+    font-size: large;
+}
+
+#right_container ol li a:hover{
+    background-color: rgb(50, 50, 241);
+    color: white;
+}

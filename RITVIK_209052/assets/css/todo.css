@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+#container{
+    padding-left: 480px;
+}
+
+#outer{
+    background-color: aliceblue;
+    height: 410px;
+    width: 310px;
+    border-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    right: 300px;
+    padding: 10px;
+}
+
+#inner{
+    background-color: lightskyblue;
+    height: 350px;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 7px;
+    padding: 20px;
+    border-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+ol{
+    list-style-type: none;
+    margin-top: -10px;
+}
+
+li {
+    margin-left: -50px;
+    font-size: 30px;
+}
+
+li .todo{
+    margin-right: 100px;
+    height: 20px;
+    margin-top: 30px;
+}

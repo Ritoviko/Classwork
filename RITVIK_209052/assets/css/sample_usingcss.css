@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+}
+#head{
+    display: flex;
+    background-color: rgb(155, 96, 53);
+    color: aliceblue;
+    word-spacing: 30px;
+    width: 100%;
+    height: 40px;
+}
+#info{
+    flex: 30%;
+    padding: 20px;
+    text-align: left;
+    font-size: small;
+    margin-top: -5px;
+    
+
+}
+
+#links{
+    padding: 20px;
+    text-align: right;
+    flex: 70%;
+    font-size: small;
+    margin-top: -5px;
+}
+#links a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    transition: 1s all;
+}
+#info a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#nav{
+    display: flex;
+    width: 100%;
+    height: 57px;
+    background-color: purple;
+}
+
+#logo{
+    flex: 10%;
+    text-align: center;
+    color: white;
+    background-color: darkmagenta;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#menu{
+    text-align: right;
+    word-spacing: 70px;
+    flex: 90%;
+    margin: 30px;
+    margin-top: 20px;
+    
+}
+
+#menu a{
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 2s all;
+    padding: 20px;
+    
+}
+
+#menu a:hover{
+    color: rgb(74, 151, 125);
+    background-color: azure;
+    text-shadow: 1px 1px grey;
+}
+
+#links a:hover{
+    color: aqua;
+    text-decoration: underline;
+    background-color: bisque;
+
+}
+
+#slider{
+    width: 99.7%;
+    height: 400px;
+    border: 2px inset black;
+    background-image: url(../images/b4bff55c334dd1f5638b4ce86ff12be1.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: gallery;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gallery{
+    0%{
+        background-image: url(../images/8ceae14ca7c66c7c81dbdd4d4c541c4c.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image: url(../images/90458324ec6652d3baa80f6bc208d999.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url(../images/983c704dd08ac07324ff06ee6b43e3f3.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
