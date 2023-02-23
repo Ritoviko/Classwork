@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        do{
+            var count = 0;
+            alert("Welcome to our random game:");
+            document.write("<h1>Welcome to our random game:</h1></br>");
+            alert("Now first let the computer think a number:");
+            document.write("<h4>Now first let the computer think a number:</h4></br>");
+            var x = Math.floor(Math.random()*100)+1;
+            alert("...");
+            alert("...");
+            alert("...");
+            alert("...");
+            document.write("...</br>");
+            document.write("...</br>");
+            document.write("...</br>");
+            alert("Okay number selected.")
+            document.write("Okay number selected.</br>");
+            for(var i = 0; i>=0; i++){
+                var n = parseInt(prompt("Guess a number between 1-100: "));
+                if (n<x){
+                    alert("Your value is lower.");
+                    document.write("Your value is lower.</br>");
+                    count++;
+                }
+                else if(n>x){
+                    alert("Your value is higher.");
+                    document.write("Your value is higher.</br>");
+                    count++;
+                }
+                else if(n==x){
+                    alert("Congrats you guessed the number.");
+                    document.write("Congrats you guessed the number.</br>");
+                    alert("You guessed in: "+count+" times.");
+                    document.write("You guessed in: "+count+" times.</br>");
+                    break
+                }
+            }
+            document.write("Do you want to continue??: </br>");
+            document.write("(1) YES</br>");
+            document.write("(2) NO</br>");
+            var opt=parseInt(prompt("Do you want to continue??: (1) YES (2) NO. Enter your choice (1 or 2): "));
+            if (opt == 1){
+                alert("Ok lets do it again.");
+                document.write("Ok lets do it again.</br>");
+            }
+            else{
+                alert("Oh ok, lets meet again! Bye-Bye.");
+                document.write("Oh ok, lets meet again! Bye-Bye.</br>");
+                break;
+            }
+
+            
+        }
+        while(true);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

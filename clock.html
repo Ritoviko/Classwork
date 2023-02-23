@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .clock{
+            margin-top: -10px;
+            display: flexbox;
+            height: 500px;
+            width:500px;
+            -ms-flex-item-align: center;
+            background-image: url(https://toppng.com//public/uploads/preview/clock-face-without-hands-11549789960tkscwc7bpl.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #hand1{
+            margin-top: 10px;
+            margin-left: 240px;
+            height: 240px;
+            width: 1px;
+            border: 5px inset rgb(141, 0, 0);
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            background-color: black;
+        }
+        #hand2{
+            margin-top: 3px;
+            margin-left: 240px;
+            height: 2px;
+            width: 180px;
+            border: 5px inset rgb(255, 0, 0);
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 50px;
+            background-color: black;
+        }
+        #hand3{
+            margin-top: 3px;
+            margin-left: 245px;
+            height: 200px;
+            width: 0px;
+            border: 1px inset black;
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 50px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div id="hand1"></div>
+        <div id="hand2"></div>
+        <div id="hand3"></div>
+    </div>
+    <div>
+        
+    </div>
+</body>
+</html>
