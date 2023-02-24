@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <script>
+            var count = 0;
+            alert("Welcome to our stone paper scissor game:");
+            document.write("<h1>Welcome to our stone paper scissor game:</h1></br>");
+            alert("Now first let the computer make a choice:");
+            document.write("<h4>Now first let the computer make a choice</h4></br>");
+            alert("...");
+            alert("...");
+            alert("...");
+            alert("...");
+            document.write("...</br>");
+            document.write("...</br>");
+            document.write("...</br>");
+            alert("Okay, selected!")
+            document.write("Okay, selected!</br>");
+            for(var i = 0; i>=0; i++){
+                var x = Math.floor(Math.random()*3)+1;
+                var n = prompt("Select a choice(stone/paper/scissor): ");
+                if (n=="Stone" || n=="stone" || n=="STONE"){
+                    if (x==1){
+                        alert("Opponent chose Stone. Its a draw.");
+                        document.write("Opponent chose Stone. Its a draw.</br>");
+                        count = count+1;
+                        var opt = prompt("Do you want to play again? Y/N: ");
+                        if (opt=="Y" || opt=="y"){
+                            alert("Ok lets do it again!");
+                            document.write("Ok lets do it again!</br>");
+                        }
+                        else if(opt=="N" || opt=="n"){
+                            alert("OK here's your final score.")
+                            alert("Final score: "+count);
+                            break
+                        }
+                    }
+                    else if(x==2){
+                        alert("Opponent chose Paper. You lost.");
+                        document.write("Opponent chose Paper. You lost.</br>");
+                        count = count-1;
+                        var opt = prompt("Do you want to play again? Y/N: ");
+                        if (opt=="Y" || opt=="y"){
+                            alert("Ok lets do it again!");
+                            document.write("Ok lets do it again!</br>");
+                        }
+                        else if(opt=="N" || opt=="n"){
+                            alert("OK here's your final score.")
+                            alert("Final score: "+count);
+                            break
+                        }
+                    }
+                    else if(x==3){
+                        alert("Opponent chose Scissor. You won.");
+                        document.write("Opponent chose Scissor. You won.</br>");
+                        count = count+2;
+                        var opt = prompt("Do you want to play again? Y/N: ");
+                        if (opt=="Y" || opt=="y"){
+                            alert("Ok lets do it again!");
+                            document.write("Ok lets do it again!</br>");
+                        }
+                        else if(opt=="N" || opt=="n"){
+                            alert("OK here's your final score.")
+                            alert("Final score: "+count);
+                            break
+                        }
+                    }
+                }
+                if (n=="Scissor" || n=="scissor" || n=="SCISSOR"){
+                    if (x==1){
+                        alert("Opponent chose Stone. You lose.");
+                        document.write("Opponent chose Stone. You lose.</br>");
+                        count = count-1;
+                        var opt = prompt("Do you want to play again? Y/N: ");
+                        if (opt=="Y" || opt=="y"){
+                            alert("Ok lets do it again!");
+                            document.write("Ok lets do it again!</br>");
+                        }
+                        else if(opt=="N" || opt=="n"){
+                            alert("OK here's your final score.")
+                            alert("Final score: "+count);
+                            break
+                        }
+                    }
+                    else if(x==2){
+                        alert("Opponent chose Paper. You won.");
+                        document.write("Opponent chose Paper. You won.</br>");
+                        count = count+2;
+                        var opt = prompt("Do you want to play again? Y/N: ");
+                        if (opt=="Y" || opt=="y"){
+                            alert("Ok lets do it again!");
+                            document.write("Ok lets do it again!</br>");
+                        }
+                        else if(opt=="N" || opt=="n"){
+                            alert("OK here's your final score.")
+                            alert("Final score: "+count);
+                            break
+                        }
+                    }
+                    else if(x==3){
+                        alert("Opponent chose Scissor. Its a draw.");
+                        document.write("Opponent chose Scissor. Its a draw.</br>");
+                        count = count+1;
+                        var opt = prompt("Do you want to play again? Y/N: ");
+                        if (opt=="Y" || opt=="y"){
+                            alert("Ok lets do it again!");
+                            document.write("Ok lets do it again!</br>");
+                        }
+                        else if(opt=="N" || opt=="n"){
+                            alert("OK here's your final score.")
+                            alert("Final score: "+count);
+                            break
+                        }
+                    }
+                }
+                else if (n=="Paper" || n=="paper" || n=="PAPER"){
+                    if (x==1){
+                        alert("Opponent chose Stone. You won.");
+                        document.write("Opponent chose Stone. You won.</br>");
+                        count = count+2;
+                        var opt = prompt("Do you want to play again? Y/N: ");
+                        if (opt=="Y" || opt=="y"){
+                            alert("Ok lets do it again!");
+                            document.write("Ok lets do it again!</br>");
+                        }
+                        else if(opt=="N" || opt=="n"){
+                            alert("OK here's your final score.")
+                            alert("Final score: "+count);
+                            break
+                        }
+                    }
+                    else if(x==2){
+                        alert("Opponent chose Paper. Its a draw.");
+                        document.write("Opponent chose Paper. Its a draw.</br>");
+                        count = count+1;
+                        var opt = prompt("Do you want to play again? Y/N: ");
+                        if (opt=="Y" || opt=="y"){
+                            alert("Ok lets do it again!");
+                            document.write("Ok lets do it again!</br>");
+                        }
+                        else if(opt=="N" || opt=="n"){
+                            alert("OK here's your final score.")
+                            alert("Final score: "+count);
+                            break
+                        }
+                    }
+                    else if(x==3){
+                        alert("Opponent chose Scissor. You Lost.");
+                        document.write("Opponent chose Scissor. You lost.</br>");
+                        count = count-1;
+                        var opt = prompt("Do you want to play again? Y/N: ");
+                        if (opt=="Y" || opt=="y"){
+                            alert("Ok lets do it again!");
+                            document.write("Ok lets do it again!</br>");
+                        }
+                        else if(opt=="N" || opt=="n"){
+                            alert("OK here's your final score.")
+                            alert("Final score: "+count);
+                            break
+                        }
+                    }
+                }
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
