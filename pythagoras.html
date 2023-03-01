@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a1 = parseInt(prompt("Enter the first value: "));
+        let a2 = parseInt(prompt("Enter the second value: "));
+        let a3 = parseInt(prompt("Enter the third value: "));
+
+        if ((a1>a2) && (a1>a3)){
+            if(a2**2 + a3**2==a1**2){
+                document.write("First value is the largest and it follows Pythagoras Theorem.")
+            }
+            else{
+                document.write("First value is the largest and it doesn't follow Pythagoras Theorem.")
+            }
+        }
+
+        else if ((a2>a1) && (a2>a3)){
+            if(a1**2 + a3**2==a2**2){
+                document.write("Second value is the largest and it follows Pythagoras Theorem.")
+            }
+            else{
+                document.write("Second value is the largest and it doesn't follow Pythagoras Theorem.")
+            }
+        }
+
+        else{
+            if(a1**2 + a2**2==a3**2){
+                document.write("Third value is the largest and it follows Pythagoras Theorem.")
+            }
+            else{
+                document.write("Third value is the largest and it doesn't follow Pythagoras Theorem.")
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
