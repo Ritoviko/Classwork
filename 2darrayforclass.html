@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var n = parseInt(prompt("Enter the no. of entries: "));
+        var arr = [n]
+
+        for (var i=0; i<n; i++){
+            arr[i] = [4];
+        }
+
+        for(var i = 0; i<n; i++){
+            for(var j = 0; j<4; j++){
+                switch(j){
+                    case 0:
+                        arr[i][j] = prompt("Enter the "+(i+1)+ " name: ");
+                        break;
+                    case 1:
+                        arr[i][j] = parseInt(prompt("Enter the age of "+(i+1)+ " person: "));
+                        break;
+                    case 2:
+                        arr[i][j]=prompt("Enter the gender of "+(i+1)+ " person: ");
+                        break;
+                    default:
+                        arr[i][j]=prompt("Enter the Course taken by "+(i+1)+ " person: ");
+                        break;
+                }
+            }
+        }
+        arr.pop();
+        document.write("<table border = '2px' cellspacing = '10px' bgcolor= 'skyblue'>");
+        document.write("<thead bgcolor= 'lightblue'>");
+        document.write("<tr>");
+        document.write("<th> Name </th>");
+        document.write("<th> Age </th>");
+        document.write("<th> Gender </th>");
+        document.write("<th> Course </th>");
+        document.write("</tr>");
+        document.write("</thead>");
+        document.write("<tbody>");
+        for(var i=0; i<n; i++){
+            document.write("<tr>")
+            for(var j=0; j<4; j++){
+                document.write("<td bgcolor='aquamarine'>"+arr[i][j]+"</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</tbody>");
+        document.write("</table>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
