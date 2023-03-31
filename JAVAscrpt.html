@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Revision</title>
+    
+</head>
+<body>
+    <h1 id="heading">Hey </h1>
+    <p id="p1">How to change content</p>
+    <p id="p2">Style Change</p>
+    <button id="button1">Event Listener</button>
+    <p id="p3"></p>
+    <label id="l1" for="">Enter Name: </label><input type="text" id="i1" placeholder="Name">
+    <button id="button2">Get input element</button>
+    <p id="p4"></p>
+
+    <script>
+        //How to access an element
+        let a = document.getElementById("heading").innerHTML;
+        console.log(a);
+
+        //How to change content
+        let b =  document.getElementById("p1");
+        b.innerHTML = "Content Changed";
+
+        //Style change
+        p2.style.color = "blue";
+
+        //Event listener
+        button1.addEventListener("mousedown", 
+        function f1(){
+            document.getElementById("p3").innerHTML = "It Worked";
+        }
+        );
+
+        //How to get the value of the input element
+        
+        
+        button2.addEventListener("mousedown",
+        function f2(){
+            let c = document.getElementById("i1").value;
+
+            //how to set the value
+            let e = document.getElementById("p2").innerHTML = c;
+            document.getElementById("l1").innerHTML = c;
+        }
+        );
+
+        //how to create an element
+        let d = document.createElement("h1");
+        d.textContent = p2.textContent;
+        d.id = p2.id;
+        parent.replaceChild(d, p2);
+
+        //add a element to existing one
+        let e = document.getElementById("p4");
+        let f = document.createElement("h2");
+        e.append(f);
+        
+
+        
+
+        
+    </script>
+</body>
+</html>

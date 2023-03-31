@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter your name: </label><input type="text" placeholder="Name" id="input1"><br>
+    <br>
+    <label for="">Enter your Age: </label><input type="text" placeholder="Age" id="input2"><br>
+    <br>
+    <label for="">Enter your City: </label><input type="text" placeholder="City" id="input3"><br>
+    <br>
+    <button id = "b1" >ENTER</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+
+    <script>
+        
+
+        b1.addEventListener("mousedown", 
+        function func1(){
+            let i1 = document.getElementById("input1").value;
+        let i2 = document.getElementById("input2").value;
+        let i3 = document.getElementById("input3").value;
+        
+           document.getElementById("p1").innerHTML = "Hello I am "+ i1;
+           document.getElementById("p2").innerHTML = i2 + " years old and";
+           document.getElementById("p3").innerHTML = "I live in "+ i3;
+        });
+
+
+        
+    </script>
+</body>
+</html>
