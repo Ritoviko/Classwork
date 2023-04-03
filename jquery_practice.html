@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").css("background-color", "red").css("color", "white");
+            $("#b2").css("background-color", "grey");
+            $("#b1").click(function(){
+                $("#p2").html("This is Para 2");
+                $("#p1").append(" And now you are subscribed");
+                $("#b1").text("Subscribed");
+                $("#b1").css("background-color", "grey").css("color", "black");
+            })
+            $("#b2").click(function(){
+                let v1 = $("<h2></h2>").text("And now you are Unsubscribed.");
+                $("#p1").append(v1);
+                $("#b1").text("Subscribe");
+                $("#b1").css("background-color", "red").css("color", "white");
+            })
+            
+        });
+    </script>
+
+</head>
+<body>
+    <h1 id="head1">THIS is JQUERY practice 1</h1>
+    <p id="p1">Para 1</p>
+    <p id="p2"></p>
+    <button id="b1">Subscribe</button>
+    <button id="b2">Unsubscribe</button>
+</body>
+</html>
