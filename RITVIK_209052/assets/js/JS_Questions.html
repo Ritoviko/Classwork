@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        /*Question1. What is the use of length method in array.
+        Answer: It tells us the size of the array.
+                For Ex. var arr = [1,2,3,4];
+                console.log(arr.length);
+        */
+
+        /*Question2. How can you push element in the begginning of the array.
+        Answer: By using the ushift method.
+                For Ex. var arr = [1,2,3,4];
+                arr.unshift(2)
+                document.write(arr);
+        */
+
+        /*Question3. Which method to use to declare array if we do not have data present on spot it will be present in future.
+        Answer: var arr = []; This is used if we didn't declare the size.
+                var arr = [5]; This is used if declare the size.
+        */
+
+        /*Question4. 
+        Answer: Method1: using sort fuction then user reverse method.
+                Method2: var arr = [5, 23, 7, 9, 0, 3];
+                        document.write(arr.sort(function sort(a, b){
+                            return b-a;
+                        }));
+                Method3: var arr = [5, 23, 7, 9, 0, 3];
+                        arr.sort(function compare(a,b){
+                            return b-a;
+                        });
+                        document.write(arr);
+        */
+
+        /*Question5. 
+        Answers: var arr = [1,2,3,4];
+                console.log(Array.isArray());
+        */
+        
+        // function fun1(...args){
+        //     console.log(args);
+        //     console.log(arguments);
+        // }
+     let a = 10;
+    function sum(...args){
+        let sum = 0;
+        for(var i=0; i<args.length; i++){
+            sum += args[i];
+        }
+        console.log(a);
+        return sum;
+    }
+    document.write(sum(2,3,5,3,6,4));
+
+
+    </script>
+    
+</body>
+</html>
